@@ -1,7 +1,7 @@
 package com.ds.linkedlist;
 
 
-public class ReverseInGroups extends LinkedList {
+public class ReverseAlternateKNodes extends LinkedList {
 	
 	public Node doReverse(Node node, int k){
 		Node curr = node;
@@ -15,17 +15,21 @@ public class ReverseInGroups extends LinkedList {
 			curr = next;
 			j--;
 		}
+		node.next = curr;
 		
-		
-		
+		j = k;
+		while(j-1>0 && curr != null){
+			curr = curr.next;
+			j--;
+		}
 		if(curr != null){
-			node.next = doReverse(curr, k);
+			curr.next = doReverse(curr.next, k);
 		}
 		return prev;
 	}
 
 	public static void main(String[] args) {
-		ReverseInGroups list = new ReverseInGroups();
+		ReverseAlternateKNodes list = new ReverseAlternateKNodes();
 		list.append(1);
 		list.append(2);
 		list.append(3);
