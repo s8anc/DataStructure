@@ -8,7 +8,6 @@ public class SortLinkedList0s1s2s extends LinkedList {
 		Node twoD = new Node(0);
 		
 		Node zero = zeroD, one = oneD, two = twoD;
-		
 		Node curr = head;
 		
 		//create 3 diff list

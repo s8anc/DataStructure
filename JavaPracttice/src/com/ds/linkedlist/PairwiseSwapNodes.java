@@ -8,6 +8,7 @@ public class PairwiseSwapNodes extends LinkedList {
 		Node next = null;
 		
 		int c=2;
+		
 		while(c > 0 && curr != null){
 			next = curr.next;
 			curr.next = prev;

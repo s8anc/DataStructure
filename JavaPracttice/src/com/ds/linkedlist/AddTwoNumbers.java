@@ -10,7 +10,6 @@ public class AddTwoNumbers extends LinkedList {
 		if(carry != 0){
 			result.push(carry);
 		}
-		
 	}
 	
 	public static void addSameSize(Node node1, Node node2){
