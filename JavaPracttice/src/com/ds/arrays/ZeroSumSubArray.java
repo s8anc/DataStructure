@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class ZeroSumSubArray {
 	//{4, 2, -3, 1, 6}
-	//4 6 3 4 10
+	// 4  6   3  4  10
 	public static void findZeroSumSubArray(int[] arr){
 		int sum = 0;
 		int l =arr.length;
