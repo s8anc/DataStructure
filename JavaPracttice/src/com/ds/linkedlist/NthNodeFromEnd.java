@@ -26,7 +26,7 @@ public class NthNodeFromEnd extends LinkedList{
 		list.push(5);
 		list.printList();
 		try {
-			System.out.println(list.findNthNodefromEnd(6));
+			System.out.println(list.findNthNodefromEnd(2));
 		} catch (Exception e) {
 			e.printStackTrace();
 		};
